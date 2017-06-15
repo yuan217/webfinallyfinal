@@ -1,0 +1,533 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body{
+  max-width: 1280px;
+}
+
+#wrapper {
+  margin: 0 auto;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  text-align: center;
+  width: 1280px;
+  height: 700px;
+}
+
+section {
+  display: inline-block;
+  width: 100%;
+}
+
+.bg {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  width: 100%;
+  height: 700px;
+  background-size: cover;
+}
+
+#situation{
+  display: flex;
+  background-image: url("img/background-02.jpg");
+}
+
+#issue{
+  display: inline-flex;
+  background-image: url("img/background-04.jpg");
+}
+
+#petition{
+  background-image: url("img/background-08.jpg");
+}
+
+.vertical{
+  display: inline-block;
+  writing-mode: tb-rl;
+  transform: rotate(180deg);
+  font-size: 10px;
+  background-color: transparent;
+  font-family: "Gill Sans",  "sans-serif";
+}
+
+.title2 h1{
+  color: grey;
+}
+
+.title2 h2{
+  background-image: url("img/bug.jpg");
+  border: 0px;
+  border-top-style: none;
+  border-bottom-style: none;
+  display: inline-block;
+  width: 100%;
+  margin: 0 auto;
+  color: #ffffff;
+  font-family: 'OpenSans-Light', sans-serif;
+}
+
+.p{
+  font-family: "Gill Sans",  "sans-serif";
+}
+
+.homepage {
+  width: 100%;
+  height: 700px;
+  background-image: url("img/homepage.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.h1{
+  font-size: 52px;
+  margin: 0;
+  text-align: left;
+  font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue";
+}
+
+.ann{
+  overflow: hidden;
+  height: 130px;
+}
+
+#ann_box{
+  position: absolute;
+  left: 70px;
+  top: 160px;
+}
+
+.h2{
+  margin: 0;
+  font-size: 20px;
+  position: absolute;
+  left: 120px;
+  top: 210px;
+  text-align: right;
+  margin: 80px;
+}
+
+.sign{
+  margin: 0 auto;
+  font-size: 20px;
+  position: absolute;
+  left: 170px;
+  top: 350px;
+  text-align: center;
+  border:1px;
+  border-bottom-style: solid;
+  border-top-style: solid;
+  border-left-style: solid;
+  border-right-style: solid;
+  width: 128px;
+  height: 47px;
+  padding: 10px 15px 15px 15px;
+  box-shadow: none;
+  background-color: transparent;
+  font-family: "Gill Sans",  "sans-serif";
+}
+
+.sign a:link {color:#000000;}
+
+.sign a:visited {color:#000000;}
+
+.bg img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#nav-info {
+  display: -webkit-flex;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-bottom: 10px;
+  width: 1280px;
+  height: 70px;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 200;
+}
+
+#nav-info>div>h1{
+  position: absolute;
+  left: 144px;
+  top: -5px;
+  font-size: 28px;
+}
+
+#nav-info>div:first-child{
+  width: 40%;
+}
+
+#nav-info>div:nth-child(2){
+  width: 60%;
+}
+
+#nav-info> div > nav{
+  height: 30%;
+}
+
+.push:hover{
+  position:relative;
+  top:1.5px;
+  left:1.5px;
+  text-decoration : underline;
+  border:#7D1DBD solid;
+  height: 0px;
+  border-width: 0px 0px 2px;
+  border-color: #000000;
+}
+
+.push2:hover{
+  position:relative;
+  top:1.7px;
+  left:1.7px;
+}
+
+.logo {
+  height: 55px;
+  width: 66px;
+  position: absolute;
+  left: 62px;
+  top: 8px;
+  margin-bottom: 10px;
+}
+
+nav ul{
+  display: block;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+nav ul li{
+  display: inline-block;
+  margin-left: 50px;
+  font-size: 25px;
+  font-family: "Gill Sans",  "sans-serif";
+}
+
+ul a:link {color:#000000;}
+
+ul a:visited {color:#000000;}
+
+.quote{
+  background-color: rgb(242,210,40);
+  height: 200px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Helvetica-boldObliQue";
+}
+
+.title1{
+  background-color: rgb(206,17,38);
+  color: #ffffff;
+  height: 80px;
+  font-size: 40px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.title2{
+  color: #ffffff;
+  font-size: 40px;
+  background-color: rgb(0,38,73);
+  height: 80px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.title3{
+  background-color: rgb(206,17,38);
+  color: #ffffff;
+  height: 80px;
+  font-size: 40px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.nonestyle{
+  list-style-type:none;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.nonestyle:last-of-type {
+  margin-bottom: 0;
+}
+
+.more{
+  border:2px;
+  border-bottom-style: solid;
+  border-top-style: solid;
+  border-left-style: solid;
+  border-right-style: solid;
+  width: 120px;
+  height: 45px;
+  padding: 10px;
+  box-shadow: none;
+  background-color: transparent;
+  font-family: "Gill Sans",  "sans-serif";
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.transparent{
+  display: inline-block;
+  box-sizing: border-box;
+  border:2px;
+  border-bottom-style: solid;
+  border-top-style: none;
+  border-left-style:none;
+  border-right-style:none;
+  -webkit-appearance: none;
+  width: 200px;
+  height: 50px;
+  padding: 15px;
+  font-size: 8px;
+  box-shadow: none;
+  background-color: transparent;
+  font-family: "Gill Sans",  "sans-serif";
+}
+
+.sth{
+  float: left;
+  height: 330px;
+  width: 150px;
+}
+
+label{
+  text-align: left;
+  height: 73px;
+  width: 100%;
+  margin-left: 30px;
+  display: inline-block;
+}
+
+.fourborder{
+  display: inline-block;
+  box-sizing: border-box;
+  border:2px;
+  border-bottom-style: solid;
+  border-top-style: solid;
+  border-left-style: solid;
+  border-right-style: solid;
+  width: 100px;
+  height: 30px;
+  font-size: 10px;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+form{
+  margin: auto;
+}
+
+.title-box{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.ptitleA{
+  width: 100%;
+  padding: 5px;
+  font-size: 48px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue";
+}
+
+.hashtag{
+  font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue";
+  font-size: 40px;
+  height: 40%;
+  width: 50%;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-right: 20px;
+}
+
+.please{
+  color: white;
+}
+
+.please:hover{
+  color: white;
+  position: relative;
+  top: 1.5px;
+  left: 1.5px;
+}
+
+.please:visited{color: white;}
+
+.sentence1{
+  width: 70%;
+}
+
+.sentence2{
+  font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue";
+  font-size: 20px;
+  height: 10%;
+  width: 30%;
+  color: white;
+  text-align: left;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  padding-right: 20px;
+}
+
+.sentence2 > p{
+  height: 20px;
+  margin-top: -10px;
+}
+
+.issued{
+  width: 100%;
+}
+
+.issuet{
+  font-family: "Georgia";
+}
+
+.issuep{
+  width: 838px;
+  display: inline-block;
+}
+
+.sheltersp{
+  width: 838px;
+  display: inline-block;
+}
+
+.hte{
+  color: white;
+}
+
+.wut{
+  font-size: 36px;
+}
+
+.last{
+  color: white;
+  width: 100%;
+  margin-bottom: 28px;
+  display: flex;
+  justify-content: center;
+  align-self: flex-end;
+}
+
+.logodown{
+  width: 30%;
+  height: 100%;
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#downlogo{
+  width: 50px;
+  height: 40px;
+}
+
+.smalltag{
+  color: #ffffff;
+  font-size: 15px;
+  width: 65%;
+  height: 100%;
+  display: inline-flex;
+  align-items: center;
+  font-family: 'Spectral', serif;
+}
+
+.window{
+  position: absolute;
+  z-index: 1;
+  width: 381px;
+  height: 450px;
+  background-color: white;
+  border: 0px;
+  margin-top: 120px;
+  margin-left: 438px;
+  box-shadow: 0 0 15px #000000;
+}
+
+.htitle{
+  width: 381px;
+  height: 67px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.share{
+  width: 34%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#textbox{
+  width:900px;
+  position: absolute;
+  padding-top: 380px;
+  padding-left: 380px;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  line-height: 24px;
+}
+
+.pic{
+  margin-left: 640px;
+}
+
+.accordionPart{
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#qaContent h2{
+  margin: 0;
+}
+
+#youtube{
+  margin: 0 18px;
+}
+
+data-title{
+  font-size: 24px;
+}
+
+.fontE{
+  font-family: 'Spectral', serif;
+}
+
+.angeline{
+  position: absolute;
+  left: 120px;
+  top: 3450px;
+  color: #000000;
+  font-size: 20px;
+}
+
+#bar{
+  position: absolute;
+  left: 120px;
+  top: 3230px;
+}
